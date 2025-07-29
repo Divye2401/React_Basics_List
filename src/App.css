@@ -1,0 +1,151 @@
+/* 🌟 General Page Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #3b0066);
+  margin: 0;
+  padding: 0;
+  color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* 🌟 Header Bar */
+header {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  color: #ffffff;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌟 Board Container */
+.board-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 25px;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+/* 🌟 Board Card */
+.board-container > div {
+  width: 280px;
+  background: #1f1f2e;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.board-container > div:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 🌟 Board Title */
+.board-container h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+  text-align: center;
+  color: #e6e6ff;
+}
+
+/* 🌟 Task List */
+ul {
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+
+/* 🌟 Task Item */
+li {
+  list-style: none;
+  background: #292940;
+  margin-bottom: 8px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+li:hover {
+  background: #3a3a55;
+  transform: scale(1.01);
+}
+
+/* 🌟 Task Text */
+.task-text {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+/* 🌟 Completed Task */
+.done {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* 🌟 Buttons */
+button {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #4b39c4;
+  transform: translateY(-1px);
+}
+
+/* 🌟 Input Field */
+input {
+  flex: 1;
+  padding: 7px 10px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background: #2a2a3d;
+  color: #f5f5f5;
+  font-size: 14px;
+  outline: none;
+}
+
+/* 🌟 Add Task Row */
+.add-task {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+/* 🌟 Select Dropdown */
+select {
+  padding: 5px 6px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  background: #2a2a3d;
+  color: #f5f5f5;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* 🌟 Dragging Effect */
+.dragging {
+  opacity: 0.6;
+  background-color: #5a4ccf;
+}
